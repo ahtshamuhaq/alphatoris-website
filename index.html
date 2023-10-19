@@ -11,11 +11,18 @@
 
     <link rel="shortcut icon" href="./favicon.png" />
     <style>
+        .reset-ul>li>a{
+color: black !important;
+        }
       .footer-bg {
     background-image: url('./assets/img/backgrounds/my-background.jpg');
     background-size: cover;  
     background-position: center;  
     background-repeat: no-repeat;  
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
 }
 /* .footer-bg {
     background-image: 
@@ -32,7 +39,9 @@
         padding: 0; /* Reset padding */
         margin: 0; /* Reset margin */
       }
-      
+      .learn{
+        color:#0c93fe ;
+      }
       .dropdown-container > a {
         display: block;
         padding: 0; /* Reset padding */
@@ -163,7 +172,7 @@ p {
     display: flex; align-items: center;
 }
 .v_associations:hover .inner, .btn.btn-darkred:hover {
-    background-color: #7c0313;
+    background-color: #2B4141;
 }
 
 .v_education:hover .inner, .btn.btn-lightblue:hover {
@@ -457,56 +466,44 @@ p {
         
         </section>
 
-        <section id="about" class="vc_row pt-70 pb-70">
-            <div class="container">
-                <div class="row d-flex flex-wrap align-items-center">
+        <!-- <section id="about" class="vc_row pt-50 pb-50">
+          <div class="container">
+              <div class="row d-flex flex-wrap align-items-center">
+      
+                  <div class="lqd-column col-lg-12 text-center mb-40">
+                      <header class="fancy-title">
+                          <h2 class="mt-4 main-title" data-split-text="true" data-split-options='{"type":"lines"}'>Hear About <span class="text-secondary">ALPHATORIS INC</span></h2>
+                      </header>
+                  </div>
+      
+                  <div class="lqd-column col-lg-12" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":52,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+      
+                      <div class="image-box text-center ">
+                          <img src="./pictures/aboutsec4.jpg" alt="Description of Image" style="width: 1140px; height: 200px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);" class="responsive-img mb-30">
+                      </div>
+      
+                      <p class="font-size-16 text-black improved-text">
+                          Alphatoris is a creative agency located in Dubai. For over a decade, Our team has helped businesses grow through exquisite design and data-driven marketing strategies for web and mobile. 
+                      </p>
+                      <p class="font-size-16 text-black improved-text">
+                          We are focused on technology, digital marketing, and web-related solutions. We work with a variety of clients, such as businesses, organizations, or individuals, to meet their specific technology and online marketing needs. 
+                      </p>
+                      <p class="font-size-16 text-black improved-text">
+                          We are business owners ourselves, so we understand the budgetary and time constraints that companies face. We’ll help you define your business goals and objectives in clear, concise terms and then work with you to deliver an integrated solution that drives bottom-line results. At Alphatoris, we pride ourselves on the level of personal contact we provide our clients.
+                      </p>
+      
+                  </div>
+      
+              </div>
+          </div>
+      </section> -->
+      
+      
 
-                    <div
-                        class="lqd-column col-lg-4"
-                        data-custom-animations="true"
-                        data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":52,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
-
-                        <header class="fancy-title mb-40">
-                            <h2 class="mt-4" data-split-text="true" data-split-options='{"type":"lines"}'>Hear About<span class="text-secondary">ALPHATORIS INC</span></h2>
-                        </header>
-
-                      <p class="font-size-16">
-                        Alphatoris is a creative agency located in Dubai. For over a decade, Our team has helped businesses grow through exquisite design and data-driven marketing strategies for web and mobile. We are focused on technology, digital marketing, and web-related solutions. We work with a variety of clients, such as businesses, organizations, or individuals, to meet their specific technology and online marketing needs. 
-We are business owners ourselves, so we understand the budgetary and time constraints that companies face. We’ll help you define your business goals and objectives in clear, concise terms and then work with you to deliver an, integrated solution that drives bottom-line results. At Alphatoris, we pride ourselves on the level of personal contact we provide our clients.
-
-                      </p><!-- /.accordion -->
-
-                    </div><!-- /.col-lg-4 -->
-
-                    <div class="lqd-column col-lg-6 col-lg-offset-2">
-
-                        <div class="liquid-img-group-container stretch-to-right">
-                            <div class="liquid-img-group-inner">
-                                <div class="liquid-img-group-single liquid-img-group-browser" data-shadow-style="4" data-inview="true" data-animate-shadow="true" data-reveal="true" data-reveal-options='{"direction":"lr"}'>
-                                    <span class="liquid-img-group-url"><span>http://</span>alphatoris.com/</span>
-                                    <div class="liquid-img-group-img-container">
-                                        <!-- /.liquid-img-group-content -->
-                                        <div class="liquid-img-container-inner">
-                                            <figure data-responsive-bg="true">
-                                                <img src="./assets/demo/misc/browser-sc.jpg" alt="Ave" />
-                                            </figure>
-                                        </div><!-- /.liquid-img-container-inner -->
-                                    </div><!-- /.liquid-img-group-img-container -->
-                                </div><!-- /.liquid-img-group-single -->
-                            </div><!-- /.liquid-img-group-inner -->
-                        </div><!-- /.liquid-img-group-container -->
-
-                    </div><!-- /.col-lg-6 col-lg-offset-2 -->
-
-                </div><!-- /.row -->
-            </div>
-          <!-- /.container -->
-        </section>
-
-        <section id="services" class="vc_row pt-80 pb-80">
+        <section id="services" class="vc_row pt-40 pb-35">
             <div class="container">
                 <h2 class="ct-pageHeaders text-center ">
-                    Services We Offer
+                    Services 
                  </h2>
                 <div class="row">
                   <div class="lqd-column col-md-4 col-sm-6 mb-40">
@@ -531,14 +528,14 @@ We are business owners ourselves, so we understand the budgetary and time constr
                       ">
                           
                           
-                            We are solution architects in addition to being service providers. We collaborate closely with our clients to fully grasp their individual needs and objectives before creating custom solutions that promote company expansion. Our team is available to help with any operations streamlining, customer engagement, or productivity needs you may have..
+                            We are solution architects in addition to being service providers. We collaborate closely with our clients...
                           
                         </p>
                         <a href="./solutions.html" class="btn btn-naked text-hover-black">
                           <span>
-                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-txt learn">Learn more</span>
                             <span class="btn-icon"
-                              ><i class="fa fa-angle-right"></i
+                              ><i class="fa fa-angle-right learn"></i
                             ></span>
                           </span>
                         </a>
@@ -570,13 +567,12 @@ We are business owners ourselves, so we understand the budgetary and time constr
                         font-size: 15px;
                         
                       ">
-                          IT infrastructure management can be difficult and time-consuming. To relieve you of this burden, Alphatoris provides comprehensive managed services. We make sure your technology runs smoothly, securely, and at its best so you can concentrate on your main lines of business. We offer a range of managed services
-                        </p>
+                          Our managed service aims to provide our customers with a seamless and mindful support system, not....</p>
                         <a href="./managed.html" class="btn btn-naked text-hover-black">
                           <span>
-                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-txt learn">Learn more</span>
                             <span class="btn-icon"
-                              ><i class="fa fa-angle-right"></i
+                              ><i class="fa fa-angle-right learn"></i
                             ></span>
                           </span>
                         </a>
@@ -607,13 +603,12 @@ We are business owners ourselves, so we understand the budgetary and time constr
                       ">
                           
                            
-                            We offer professional content writing services to assist you in developing informative and entertaining material for your website, blog, social media accounts, and other digital platforms. Our skilled writers can customize content to your particular industry and target market, ensuring that your message is understood by your target audience
-                        </p>
+                            We offer professional content writing services to assist you in developing informative and....</p>
                         <a href="./contentwriting.html" class="btn btn-naked text-hover-black">
                           <span>
-                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-txt learn">Learn more</span>
                             <span class="btn-icon"
-                              ><i class="fa fa-angle-right"></i
+                              ><i class="fa fa-angle-right learn"></i
                             ></span>
                           </span>
                         </a>
@@ -644,13 +639,12 @@ We are business owners ourselves, so we understand the budgetary and time constr
                           
                         ">
                           
-                            Being present on iOS and Android is essential for reaching your target audience in the era of mobile dominance. Our team of app developers is skilled at producing appealing and user-friendly mobile applications that are tailored to your unique business requirements
-                        </p>
+                            Being present on iOS and Android is essential for reaching your target audience in the era of... </p>
                         <a href="./ios.html" class="btn btn-naked text-hover-black">
                           <span>
-                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-txt learn">Learn more</span>
                             <span class="btn-icon"
-                              ><i class="fa fa-angle-right"></i
+                              ><i class="fa fa-angle-right learn"></i
                             ></span>
                           </span>
                         </a>
@@ -668,7 +662,7 @@ We are business owners ourselves, so we understand the budgetary and time constr
                     >
                       <div class="iconbox-icon-wrap">
                         <span class="iconbox-icon-container text-black">
-                          <i class="icon-ecommerce_bag_search"></i>
+                          <img src="./pictures/seoicon.png" alt="" style="height: 50px !important; width: 50px;">
                         </span>
                       </div>
                       <!-- /.iconbox-icon-wrap -->
@@ -681,13 +675,12 @@ We are business owners ourselves, so we understand the budgetary and time constr
                           
                         ">
                           
-                            In today's digital landscape, being visible on search engines is paramount. Our SEO services are designed to enhance your online presence, improve search engine rankings, and drive organic traffic to your website                        
-                        </p>
+                            In today's digital landscape, being visible on search engines is paramount. Our SEO services are....</p>
                         <a href="./seo.html" class="btn btn-naked text-hover-black">
                           <span>
-                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-txt learn">Learn more</span>
                             <span class="btn-icon"
-                              ><i class="fa fa-angle-right"></i
+                              ><i class="fa fa-angle-right learn"></i
                             ></span>
                           </span>
                         </a>
@@ -710,7 +703,7 @@ We are business owners ourselves, so we understand the budgetary and time constr
                       </div>
                       <!-- /.iconbox-icon-wrap -->
                       <div class="contents">
-                        <h3 class="font-weight-semibold web">Website development & Email hosting</h3>
+                        <h3 class="font-weight-semibold web">Website development </h3>
                         <p  style="
                         color: #000000;
                         font-size: 15px;
@@ -718,13 +711,12 @@ We are business owners ourselves, so we understand the budgetary and time constr
                       ">
                           
                            
-                            In the digital world, a website often serves as client's first point of contact. With our web design services, we take care of every single detail to ensure that your website speaks directly to your ideal customers. From captivating visuals to persuasive copy, we’ll create a digital presence that truly resonates with your target audience and helps you achieve your business goals. Additionally, we provide dependable email hosting services to guarantee the effectiveness and security of your business communications
-                        </p>
+                            In the digital world, a website often serves as client's first point of contact. With our web design.... </p>
                         <a href="./webdev.html" class="btn btn-naked text-hover-black">
                           <span>
-                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-txt learn">Learn more</span>
                             <span class="btn-icon"
-                              ><i class="fa fa-angle-right"></i
+                              ><i class="fa fa-angle-right learn"></i
                             ></span>
                           </span>
                         </a>
@@ -739,130 +731,119 @@ We are business owners ourselves, so we understand the budgetary and time constr
               </div>
           <!-- /.container -->
         </section>
-        <section
-        id=""
-        class="vc_row pt-110 pb-120 mt-40"
-        style="background-image: url(./pictures/alpha-homeban.jpg)"
-        
-        data-parallax="true"
-        data-parallax-options='{ "parallaxBG": true }'
-      >
-        <div class="container">
-          <div class="row">
-            <div
-              class="lqd-column col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center"
-              data-custom-animations="true"
-              data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"160","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":52,"translateZ":-142,"rotateX":-64,"opacity":0},"animations":{"translateY":0,"translateZ":0,"rotateX":0,"opacity":1}}'
-            >
-              <header class="fancy-title">
-                <h2
-                  class="mt-0 mb-4 text-black"
-                  data-fittext="true"
-                  data-fittext-options='{ "compressor": 0.65,"maxFontSize": 72,"minFontSize": 30 }'
-                  data-split-text="true"
-                  data-split-options='{"type":"lines"}'
-                >
-                  We are optimists who love to work together
-                </h2>
-                <p
-                  class="mb-60 font-size-24 text-black px-4"
-                  data-split-text="true"
-                  data-split-options='{"type":"lines"}'
-                >
-                  Let’s collaborate and make an impact with our
-                  cross-discipline approach to design and deveopment.
-                </p>
-              </header>
-
-              <a
-                href="#"
-                class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2"
-              >
-                <span>
-                  <span class="btn-txt">Free Consultation</span>
-                </span>
-              </a>
-            </div>
-            <!-- /.col-md-8 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
+     
             <section class="paddingSection ct-u-sectionGrey text-center pb-120">
                 <div class="innerContainer">
                 <h2 class="ct-pageHeader text-center">
-                   Industries We Serve
+                   Industries 
                 </h2>
-                <p class="paddingBottom45">
+                <p class="paddingBottom45 ">
                    Business isn't one size fits all. Every industry requires a custom solution.<br>
                    Learn more about how we've helped businesses in your industry by clicking below.
                 </p>
-                <div class="ct-tabs-outer js-tabs">
-                   <div class="row text-center">
-                    <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4">
+                <section class="vc_row ">
+                  <div class="container">
+                    <div class="row d-flex justify-content-center">
+          
+                      <div class="lqd-column col-md-2 ">
+          
+                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-blue px-2 w-100" data-plugin-options='{"color": "#3d59e8"}'>
+                          
+                          <div class="iconbox-icon-wrap">
+                            <span class="iconbox-icon-container">
+                             
+                          <img src="./pictures/icon1.png" alt="" style="height: 70px !important; width: 70px;">
+                            
+                            </span>
+                          </div><!-- /.iconbox-icon-wrap -->
+                          <div class="contents">
+                            <p class="font-size-14">
+                              <strong>Education</strong>
+                            </p>
+                          </div><!-- /.contents -->
+          
+                        </div><!-- /.iconbox -->
+          
+                      </div><!-- /.col-md-2 col-md-offset-3 -->
+          
+                      <div class="lqd-column col-md-2">
+          
+                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-green px-2 w-100" data-plugin-options='{"color": "#28d5a7"}'>
+                          
+                          <div class="iconbox-icon-wrap">
+                            <span class="iconbox-icon-container">
+                          <img src="./pictures/icon2.png" alt="" style="height: 70px !important; width: 70px;">
 
-                         <div class="item v_associations" >
-                            <div class="inner">
-                               &nbsp;
-                               <img src="./pictures/graduation-cap.png" alt="" style="height: 50px !important; width: 50px;">
-                              </div>
-                            <h2>
-                               Education
-                            </h2>
-                         </div>
-                      </div>
-                      <div class="col-md-2 col-sm-2 col-xs-4">
-                         <div class="item v_education" >
-                            <div class="inner">
-                               &nbsp;
-                               <i class="fa fa-university" aria-hidden="true"></i>
-                
-                            </div>
-                            <h2>
-                               Government
-                            </h2>
-                         </div>
-                      </div>
-                      <div class="col-md-2 col-sm-2 col-xs-4">
-                         <div class="item v_entertainment" >
-                            <div class="inner">
-                               &nbsp;
-                               
-                               <img src="./pictures/couple.png" alt="" style="height: 60px !important; width: 60px;">
-                
-                            </div>
-                            <h2>
-                               Senior Living
-                            </h2>
-                         </div>
-                      </div>
-                      <div class="col-md-2 col-sm-2 col-xs-4">
-                         <div class="item v_finance" >
-                            <div class="inner">
-                               &nbsp;
-                               <i class="fa fa-line-chart" aria-hidden="true"></i>
-                
-                            </div>
-                            <h2>
-                               Finance
-                            </h2>
-                         </div>
-                      </div>
-                      <div class="col-md-2 col-sm-2 col-xs-4">
-                         <div class="item v_government" >
-                            <div class="inner">
-                               &nbsp;
-                              <i class="fa fa-heartbeat" aria-hidden="true"></i>
-                            </div>
-                            <h2>
-                               Healthcare
-                            </h2>
-                         </div>
-                      </div>
-                    
-                   </div>
-                </div>
+                            </span>
+                          </div><!-- /.iconbox-icon-wrap -->
+                          <div class="contents">
+                            <p class="font-size-14">
+                              <strong>HealthCare</strong>
+                            </p>
+                          </div><!-- /.contents -->
+          
+                        </div><!-- /.iconbox -->
+          
+                      </div><!-- /.col-md-2 -->
+          
+                      <div class="lqd-column col-md-2">
+          
+                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-pink px-2 w-100" data-plugin-options='{"color": "#fe688b"}'>
+                          
+                          <div class="iconbox-icon-wrap">
+                            <span class="iconbox-icon-container">
+                          <img src="./pictures/icon3.png" alt="" style="height: 70px !important; width: 70px;">
+                            </span>
+                          </div><!-- /.iconbox-icon-wrap -->
+                          <div class="contents">
+                            <p class="font-size-14">
+                              <strong>Senior Living</strong>
+                            </p>
+                          </div><!-- /.contents -->
+          
+                        </div><!-- /.iconbox -->
+          
+                      </div><!-- /.col-md-2 -->
+                      <div class="lqd-column col-md-2">
+          
+                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex  px-2 w-100" style="background-color: #DCE9F6" data-plugin-options='{"color": "#fe688b"}'>
+                          
+                          <div class="iconbox-icon-wrap">
+                            <span class="iconbox-icon-container">
+                          <img src="./pictures/icon4.png" alt="" style="height: 70px !important; width: 70px;">
+                            </span>
+                          </div><!-- /.iconbox-icon-wrap -->
+                          <div class="contents">
+                            <p class="font-size-14">
+                              <strong>Government</strong>
+                            </p>
+                          </div><!-- /.contents -->
+          
+                        </div><!-- /.iconbox -->
+          
+                      </div><!-- /.col-md-2 -->
+                      <div class="lqd-column col-md-2">
+          
+                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex  px-2 w-100" style="background-color: #fcece1;" data-plugin-options='{"color": "#fe688b"}'>
+                          
+                          <div class="iconbox-icon-wrap">
+                            <span class="iconbox-icon-container">
+                          <img src="./pictures/icon5.png" alt="" style="height: 70px !important; width: 70px;">
+                            </span>
+                          </div><!-- /.iconbox-icon-wrap -->
+                          <div class="contents">
+                            <p class="font-size-14">
+                              <strong>Finance</strong>
+                            </p>
+                          </div><!-- /.contents -->
+          
+                        </div><!-- /.iconbox -->
+          
+                      </div><!-- /.col-md-2 -->
+          
+                    </div><!-- /.row -->
+                  </div><!-- /.container -->
+                </section>
                 </div>
             </section>
           <!-- /.container -->
