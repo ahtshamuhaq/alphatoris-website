@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#3ed2a7" />
+
+    <link rel="shortcut icon" href="./favicon.png" />
+    <style>
+      .footer-bg {
+    background-image: url('./assets/img/backgrounds/my-background.jpg');
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+}
+/* .footer-bg {
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 105, 180, 0.6), rgba(128, 0, 128, 0.6)), 
+        url('./assets/img/backgrounds/my-background.jpg');
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+} */
+
+      .dropdown-container {
+        position: relative;
+        display: inline-block;
+        padding: 0; /* Reset padding */
+        margin: 0; /* Reset margin */
+      }
+      
+      .dropdown-container > a {
+        display: block;
+        padding: 0; /* Reset padding */
+        margin: 0; /* Reset margin */
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%; /* This will position the dropdown right below the "Services" */
+        left: 0; /* Align to the left side */
+        background-color: #f9f9f9;
+        min-width: 290px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin: 0; /* Reset margin */
+        padding: 0; /* Reset padding */
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: white; /* White background for dropdown items */
+        margin: 0; /* Reset margin */
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown-container:hover .dropdown-content {
+        display: block;
+      }
+      .bg{
+        background-color: #34dbc5 !important;
+      }
+      .ct-u-sectionGrey {
+    background-color: rgba(235, 235, 235, 0.4);
+}
+.paddingSection {
+    padding: 60px 15px;
+}
+.innerContainer {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.home-page-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 4.2rem;
+    color: #1d2127;
+    text-align: center;
+}
+p {
+    color: #7f8387;
+    font-size: 1.8rem;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.paddingBottom45 {
+    padding-bottom: 45px;
+}
+
+.ct-tabs-outer .inner:before {
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+.ct-tabs-outer .inner {
+    width: 100%;
+    height: 175px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+.item.v_associations .inner {
+    background: #ae041b  no-repeat center center;justify-content:center;
+    display: flex; align-items: center;
+}
+.item {
+    display: block;
+    position: relative;
+    margin: 15px 0;
+    z-index: 1;
+}
+.ct-tabs-outer .item h2 {
+    text-align: center;
+    font-size: 20px;    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.fa-heartbeat,.fa-train, 
+.fa-university, 
+.fa-television, 
+.fa-line-chart, 
+.fa-car {
+    color: white;
+    font-size: 40px !important;
+    top: 64px;
+    left: 0;
+    right: 0;
+}
+
+.item.v_education .inner {
+    background: #38b3e1 no-repeat center center;
+    justify-content:center;
+    display: flex; align-items: center;
+}
+.item.v_entertainment .inner {
+    background: #fa7c01 no-repeat center center;justify-content:center;
+    display: flex; align-items: center;
+}
+.item.v_finance .inner {
+    background: #a7c53b no-repeat center center;justify-content:center;
+    display: flex; align-items: center;
+}
+.item.v_government .inner {
+    background: #7f75a7 no-repeat center center;justify-content:center;
+    display: flex; align-items: center;
+}
+.item.v_healthcare .inner {
+    background: #0b71a9 no-repeat center center;justify-content:center;
+    display: flex; align-items: center;
+}
+.v_associations:hover .inner, .btn.btn-darkred:hover {
+    background-color: #7c0313;
+}
+
+.v_education:hover .inner, .btn.btn-lightblue:hover {
+    background-color: #1e9ac8;
+}
+.v_entertainment:hover .inner, .btn.btn-lightorange:hover {
+    background-color: #c76301;
+}
+.v_finance:hover .inner, .btn.btn-lightgreen:hover {
+    background-color: #869e2f;
+}
+.v_government:hover .inner, .btn.btn-purple:hover {
+    background-color: #655b8e;
+}
+.v_healthcare:hover .inner, .btn.btn-darkblue:hover {
+    background-color: #085179;
+}
+.ct-pageHeaders{
+    margin-bottom: 50px !important;
+}
+@media (max-width: 767px) {
+    .ct-tabs-outer .item h2 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .fa-heartbeat, .fa-train, .fa-university, .fa-television, .fa-line-chart, .fa-car {
+        font-size: 30px !important;
+    }
+}
+
+
+    </style>
+    <title>Alphatoris</title>
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/liquid-icon/liquid-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" href="assets/css/themes/digital-agency.css" />
+
+    <!-- Head Libs -->
+    <script async src="assets/vendors/modernizr.min.js"></script>
+  </head>
+  <body
+    data-mobile-nav-trigger-alignment="right"
+    data-mobile-nav-align="left"
+    data-mobile-nav-style="minimal"
+    data-mobile-nav-shceme="gray"
+    data-mobile-header-scheme="gray"
+    data-mobile-nav-breakpoint="1199"
+  >
+    <div id="wrap">
+      <header class="main-header main-header-overlay">
+        <div class="mainbar-wrap">
+          <div class="megamenu-hover-bg"></div>
+          <!-- /.megamenu-hover-bg -->
+          <div class="container-fluid mainbar-container">
+            <div class="mainbar">
+              <div class="row mainbar-row align-items-lg-stretch px-4">
+                <div class="col pr-5">
+                  <div class="navbar-header">
+                    <a
+                      class="navbar-brand"
+                      href="index-creative.html"
+                      rel="home"
+                    >
+                      <span class="navbar-brand-inner">
+                        <img
+                          class="mobile-logo-default"
+                          src="./assets/img/logo/logo-1.svg"
+                          alt="Ave HTML Template"
+                        />
+                        <img
+                          class="logo-default"
+                          src="./assets/img/logo/logo-light.svg"
+                          alt="Ave HTML Template"
+                        />
+                      </span>
+                    </a>
+                    <button
+                      type="button"
+                      class="navbar-toggle collapsed nav-trigger style-mobile"
+                      data-toggle="collapse"
+                      data-target="#main-header-collapse"
+                      aria-expanded="false"
+                      data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'
+                    >
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                      </span>
+                    </button>
+                  </div>
+                  <!-- /.navbar-header -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+                  <div
+                    class="collapse navbar-collapse"
+                    id="main-header-collapse"
+                  >
+                    <ul
+                      id="primary-nav"
+                      class="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center"
+                      data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'
+                      data-localscroll="true"
+                    >
+                      <li class="is-active">
+                        <a href="#content">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">Home</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#about">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">About</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown-container">
+                        <a href="#services">
+                          <span class=""></span>
+                          <span class="">
+                            <span class=""></span>
+                            <span class="">Services</span>
+                          </span>
+                        </a>
+                        <div class="dropdown-content">
+                          <a href="./solutions.html">Solution Providers</a>
+                          <a href="./webdev.html">Web development and email hosting </a>
+                          <a href="./managed.html">Managed Services 
+                          <a href="./ios.html">ios/Andriod development</a>
+                          <a href="./seo.html">SEO Services</a>
+                          <a href="./contentwriting.html">
+                            Content Writing
+                          </a>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#blog">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">Career</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#contact">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">Contact</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- /#primary-nav  -->
+                  </div>
+                  <!-- /#main-header-collapse -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col text-right">
+                  <div class="header-module">
+                    <ul
+                      class="social-icon social-icon-sm scheme-white font-size-16"
+                    >
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-behance"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-dribbble"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.header-module -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.mainbar-row -->
+            </div>
+            <!-- /.mainbar -->
+          </div>
+          <!-- /.mainbar-container -->
+        </div>
+        <!-- /.mainbar-wrap -->
+      </header>
+      <!-- /.main-header -->
+
+      <main id="content" class="content">
+        <section
+          class="vc_row fullheight d-flex flex-wrap align-items-end mb-80"
+          data-parallax="true"
+          data-parallax-options='{"parallaxBG":true}'
+          data-slideshow-bg="true"
+          data-slideshow-options='{"delay":3000,"effect":"scale","imageArray":["./pictures/homebanner1.jpg","./pictures/homebanner1.jpg"]}'
+          
+        >
+          <span class="row-bg-loader">
+            <span class="row-bg-loader-inner"></span>
+          </span>
+
+          <div class="container">
+            <div class="row">
+              <div
+                class="lqd-column col-md-10 col-md-offset-1 text-center py-7"
+                data-custom-animations="true"
+                data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'
+              >
+                <header class="fancy-title">
+                  <h6
+                    class="text-uppercase font-weight-normal ltr-sp-2 text-white mb-5"
+                  >
+                    WE LOVE CREATING
+                  </h6>
+                  <h2 class="text-white lh-15 mb-4">
+                    <span class="font-size-3-3x lh-1">digital ideas</span>
+                  </h2>
+
+                  <div class="row">
+                    <div class="lqd-column col-md-8 col-md-offset-2">
+                      <p class="text-white font-size-24 mb-1">
+                        Ave is a thriving creative digital media & design agency
+                        based by the valley in San Francisco.
+                      </p>
+                    </div>
+                    <!-- /.col-md-8 col-md-offset-2 -->
+                  </div>
+                  <!-- /.row -->
+                </header>
+                <!-- /.fancy-title -->
+
+                <a
+                  href="#"
+                  class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-black mb-2"
+                  data-localscroll="true"
+                  data-localscroll-options='{"scrollBelowSection":true}'
+                >
+                  <span>
+                    <span class="btn-txt">free Consultation</span>
+                  </span>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/watch?v=LjaKHqDbzSA"
+                  class="btn btn-default text-uppercase circle btn-bordered border-thick fresco btn-icon-left btn-icon-circle btn-icon-bordered font-size-16 font-weight-bold ltr-sp-05 px-2 color-secondary mb-2"
+                >
+                  <span>
+                    <span class="btn-txt">How we work</span>
+                    <span class="btn-icon"><i class="fa fa-play"></i></span>
+                  </span>
+                </a>
+              </div>
+              <!-- /.col-md-10 col-md-offset-1 text-center -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+
+        
+        </section>
+
+        <section id="about" class="vc_row pt-70 pb-70">
+            <div class="container">
+                <div class="row d-flex flex-wrap align-items-center">
+
+                    <div
+                        class="lqd-column col-lg-4"
+                        data-custom-animations="true"
+                        data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":52,"opacity":0},"animations":{"translateY":0,"opacity":1}}'>
+
+                        <header class="fancy-title mb-40">
+                            <h2 class="mt-4" data-split-text="true" data-split-options='{"type":"lines"}'>Hear About<span class="text-secondary">ALPHATORIS INC</span></h2>
+                        </header>
+
+                      <p class="font-size-16">
+                        Alphatoris is a creative agency located in Dubai. For over a decade, Our team has helped businesses grow through exquisite design and data-driven marketing strategies for web and mobile. We are focused on technology, digital marketing, and web-related solutions. We work with a variety of clients, such as businesses, organizations, or individuals, to meet their specific technology and online marketing needs. 
+We are business owners ourselves, so we understand the budgetary and time constraints that companies face. We’ll help you define your business goals and objectives in clear, concise terms and then work with you to deliver an, integrated solution that drives bottom-line results. At Alphatoris, we pride ourselves on the level of personal contact we provide our clients.
+
+                      </p><!-- /.accordion -->
+
+                    </div><!-- /.col-lg-4 -->
+
+                    <div class="lqd-column col-lg-6 col-lg-offset-2">
+
+                        <div class="liquid-img-group-container stretch-to-right">
+                            <div class="liquid-img-group-inner">
+                                <div class="liquid-img-group-single liquid-img-group-browser" data-shadow-style="4" data-inview="true" data-animate-shadow="true" data-reveal="true" data-reveal-options='{"direction":"lr"}'>
+                                    <span class="liquid-img-group-url"><span>http://</span>alphatoris.com/</span>
+                                    <div class="liquid-img-group-img-container">
+                                        <!-- /.liquid-img-group-content -->
+                                        <div class="liquid-img-container-inner">
+                                            <figure data-responsive-bg="true">
+                                                <img src="./assets/demo/misc/browser-sc.jpg" alt="Ave" />
+                                            </figure>
+                                        </div><!-- /.liquid-img-container-inner -->
+                                    </div><!-- /.liquid-img-group-img-container -->
+                                </div><!-- /.liquid-img-group-single -->
+                            </div><!-- /.liquid-img-group-inner -->
+                        </div><!-- /.liquid-img-group-container -->
+
+                    </div><!-- /.col-lg-6 col-lg-offset-2 -->
+
+                </div><!-- /.row -->
+            </div>
+          <!-- /.container -->
+        </section>
+
+        <section id="services" class="vc_row pt-80 pb-80">
+            <div class="container">
+                <h2 class="ct-pageHeaders text-center ">
+                    Services We Offer
+                 </h2>
+                <div class="row">
+                  <div class="lqd-column col-md-4 col-sm-6 mb-40">
+                    <div
+                      class="iconbox iconbox-side iconbox-xl iconbox-heading-sm"
+                      data-plugin-options='{ "color":"rgb(16, 15, 38)" }'
+                    >
+                      <div class="iconbox-icon-wrap">
+                        <span class="iconbox-icon-container text-black">
+<img src="./pictures/sol.png" alt="" style="height: 50px !important; width: 50px;">
+                        </span>
+                      </div>
+                      <!-- /.iconbox-icon-wrap -->
+                      <div class="contents">
+                        <h3 class="font-weight-semibold">
+                          Solutions Provider
+                        </h3>
+                        <p   style="
+                        color: #000000;
+                        font-size: 15px;
+                        
+                      ">
+                          
+                          
+                            We are solution architects in addition to being service providers. We collaborate closely with our clients to fully grasp their individual needs and objectives before creating custom solutions that promote company expansion. Our team is available to help with any operations streamlining, customer engagement, or productivity needs you may have..
+                          
+                        </p>
+                        <a href="./solutions.html" class="btn btn-naked text-hover-black">
+                          <span>
+                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-icon"
+                              ><i class="fa fa-angle-right"></i
+                            ></span>
+                          </span>
+                        </a>
+                      </div>
+                      <!-- /.contents -->
+                    </div>
+                    <!-- /.iconbox -->
+                  </div>
+                  <!-- /.col-md-4 col-sm-6 -->
+    
+                  <div class="lqd-column col-md-4 col-sm-6 mb-40">
+                    <div
+                      class="iconbox iconbox-side iconbox-xl iconbox-heading-sm"
+                      data-plugin-options='{ "color":"rgb(16, 15, 38)" }'
+                    >
+                      <div class="iconbox-icon-wrap">
+                        <span class="iconbox-icon-container text-black">
+<img src="./pictures/managed.png" alt="" style="height: 50px !important; width: 50px;">
+                          
+                        </span>
+                      </div>
+                      <!-- /.iconbox-icon-wrap -->
+                      <div class="contents">
+                        <h3 class="font-weight-semibold">
+                          Managed Services
+                        </h3>
+                        <p style="
+                        color: #000000;
+                        font-size: 15px;
+                        
+                      ">
+                          IT infrastructure management can be difficult and time-consuming. To relieve you of this burden, Alphatoris provides comprehensive managed services. We make sure your technology runs smoothly, securely, and at its best so you can concentrate on your main lines of business. We offer a range of managed services
+                        </p>
+                        <a href="./managed.html" class="btn btn-naked text-hover-black">
+                          <span>
+                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-icon"
+                              ><i class="fa fa-angle-right"></i
+                            ></span>
+                          </span>
+                        </a>
+                      </div>
+                      <!-- /.contents -->
+                    </div>
+                    <!-- /.iconbox -->
+                  </div>
+                  <!-- /.col-md-4 col-sm-6 -->
+    
+                  <div class="lqd-column col-md-4 col-sm-6 mb-40">
+                    <div
+                      class="iconbox iconbox-side iconbox-xl iconbox-heading-sm"
+                      data-plugin-options='{ "color":"rgb(16, 15, 38)" }'
+                    >
+                      <div class="iconbox-icon-wrap">
+                        <span class="iconbox-icon-container text-black">
+                          <img src="./pictures/content.png" alt="" style="height: 50px !important; width: 50px;">
+                        </span>
+                      </div>
+                      <!-- /.iconbox-icon-wrap -->
+                      <div class="contents">
+                        <h3 class="font-weight-semibold">Content Writing</h3>
+                        <p  style="
+                        color: #000000;
+                        font-size: 15px;
+                        
+                      ">
+                          
+                           
+                            We offer professional content writing services to assist you in developing informative and entertaining material for your website, blog, social media accounts, and other digital platforms. Our skilled writers can customize content to your particular industry and target market, ensuring that your message is understood by your target audience
+                        </p>
+                        <a href="./contentwriting.html" class="btn btn-naked text-hover-black">
+                          <span>
+                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-icon"
+                              ><i class="fa fa-angle-right"></i
+                            ></span>
+                          </span>
+                        </a>
+                      </div>
+                      <!-- /.contents -->
+                    </div>
+                    <!-- /.iconbox -->
+                  </div>
+                  <!-- /.col-md-4 col-sm-6 -->
+    
+                  <div class="lqd-column col-md-4 col-sm-6 mb-40">
+                    <div
+                      class="iconbox iconbox-side iconbox-xl iconbox-heading-sm"
+                      data-plugin-options='{ "color":"rgb(16, 15, 38)" }'
+                    >
+                      <div class="iconbox-icon-wrap">
+                        <span class="iconbox-icon-container text-black">
+                          <img src="./pictures/ios.png" alt="" style="height: 50px !important; width: 50px;">
+                        </span>
+                      </div>
+                      <!-- /.iconbox-icon-wrap -->
+                      <div class="contents">
+                        <h3 class="font-weight-semibold">iOS/Android Development</h3>
+                        <p 
+                        style="
+                          color: #000000;
+                          font-size: 15px;
+                          
+                        ">
+                          
+                            Being present on iOS and Android is essential for reaching your target audience in the era of mobile dominance. Our team of app developers is skilled at producing appealing and user-friendly mobile applications that are tailored to your unique business requirements
+                        </p>
+                        <a href="./ios.html" class="btn btn-naked text-hover-black">
+                          <span>
+                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-icon"
+                              ><i class="fa fa-angle-right"></i
+                            ></span>
+                          </span>
+                        </a>
+                      </div>
+                      <!-- /.contents -->
+                    </div>
+                    <!-- /.iconbox -->
+                  </div>
+                  <!-- /.col-md-4 col-sm-6 -->
+    
+                  <div class="lqd-column col-md-4 col-sm-6 mb-40">
+                    <div
+                      class="iconbox iconbox-side iconbox-xl iconbox-heading-sm"
+                      data-plugin-options='{ "color":"rgb(16, 15, 38)" }'
+                    >
+                      <div class="iconbox-icon-wrap">
+                        <span class="iconbox-icon-container text-black">
+                          <i class="icon-ecommerce_bag_search"></i>
+                        </span>
+                      </div>
+                      <!-- /.iconbox-icon-wrap -->
+                      <div class="contents">
+                        <h3 class="font-weight-semibold">SEO Services</h3>
+                        <p 
+                        style="
+                          color: #000000;
+                          font-size: 15px;
+                          
+                        ">
+                          
+                            In today's digital landscape, being visible on search engines is paramount. Our SEO services are designed to enhance your online presence, improve search engine rankings, and drive organic traffic to your website                        
+                        </p>
+                        <a href="./seo.html" class="btn btn-naked text-hover-black">
+                          <span>
+                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-icon"
+                              ><i class="fa fa-angle-right"></i
+                            ></span>
+                          </span>
+                        </a>
+                      </div>
+                      <!-- /.contents -->
+                    </div>
+                    <!-- /.iconbox -->
+                  </div>
+                  <!-- /.col-md-4 col-sm-6 -->
+    
+                  <div class="lqd-column col-md-4 col-sm-6 mb-40">
+                    <div
+                      class="iconbox iconbox-side iconbox-xl iconbox-heading-sm"
+                      data-plugin-options='{ "color":"rgb(16, 15, 38)" }'
+                    >
+                      <div class="iconbox-icon-wrap">
+                        <span class="iconbox-icon-container text-black">
+                          <img src="./pictures/web.png" alt="" style="height: 50px !important; width: 50px;">
+                        </span>
+                      </div>
+                      <!-- /.iconbox-icon-wrap -->
+                      <div class="contents">
+                        <h3 class="font-weight-semibold web">Website development & Email hosting</h3>
+                        <p  style="
+                        color: #000000;
+                        font-size: 15px;
+                        
+                      ">
+                          
+                           
+                            In the digital world, a website often serves as client's first point of contact. With our web design services, we take care of every single detail to ensure that your website speaks directly to your ideal customers. From captivating visuals to persuasive copy, we’ll create a digital presence that truly resonates with your target audience and helps you achieve your business goals. Additionally, we provide dependable email hosting services to guarantee the effectiveness and security of your business communications
+                        </p>
+                        <a href="./webdev.html" class="btn btn-naked text-hover-black">
+                          <span>
+                            <span class="btn-txt">Learn more</span>
+                            <span class="btn-icon"
+                              ><i class="fa fa-angle-right"></i
+                            ></span>
+                          </span>
+                        </a>
+                      </div>
+                      <!-- /.contents -->
+                    </div>
+                    <!-- /.iconbox -->
+                  </div>
+                  <!-- /.col-md-4 col-sm-6 -->
+                </div>
+                <!-- /.row -->
+              </div>
+          <!-- /.container -->
+        </section>
+        <section
+        id=""
+        class="vc_row pt-110 pb-120 mt-40"
+        style="background-image: url(./pictures/alpha-homeban.jpg)"
+        
+        data-parallax="true"
+        data-parallax-options='{ "parallaxBG": true }'
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="lqd-column col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center"
+              data-custom-animations="true"
+              data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"160","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":52,"translateZ":-142,"rotateX":-64,"opacity":0},"animations":{"translateY":0,"translateZ":0,"rotateX":0,"opacity":1}}'
+            >
+              <header class="fancy-title">
+                <h2
+                  class="mt-0 mb-4 text-black"
+                  data-fittext="true"
+                  data-fittext-options='{ "compressor": 0.65,"maxFontSize": 72,"minFontSize": 30 }'
+                  data-split-text="true"
+                  data-split-options='{"type":"lines"}'
+                >
+                  We are optimists who love to work together
+                </h2>
+                <p
+                  class="mb-60 font-size-24 text-black px-4"
+                  data-split-text="true"
+                  data-split-options='{"type":"lines"}'
+                >
+                  Let’s collaborate and make an impact with our
+                  cross-discipline approach to design and deveopment.
+                </p>
+              </header>
+
+              <a
+                href="#"
+                class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2"
+              >
+                <span>
+                  <span class="btn-txt">Free Consultation</span>
+                </span>
+              </a>
+            </div>
+            <!-- /.col-md-8 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+            <section class="paddingSection ct-u-sectionGrey text-center pb-120">
+                <div class="innerContainer">
+                <h2 class="ct-pageHeader text-center">
+                   Industries We Serve
+                </h2>
+                <p class="paddingBottom45">
+                   Business isn't one size fits all. Every industry requires a custom solution.<br>
+                   Learn more about how we've helped businesses in your industry by clicking below.
+                </p>
+                <div class="ct-tabs-outer js-tabs">
+                   <div class="row text-center">
+                    <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-4">
+
+                         <div class="item v_associations" >
+                            <div class="inner">
+                               &nbsp;
+                               <img src="./pictures/graduation-cap.png" alt="" style="height: 50px !important; width: 50px;">
+                              </div>
+                            <h2>
+                               Education
+                            </h2>
+                         </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-4">
+                         <div class="item v_education" >
+                            <div class="inner">
+                               &nbsp;
+                               <i class="fa fa-university" aria-hidden="true"></i>
+                
+                            </div>
+                            <h2>
+                               Government
+                            </h2>
+                         </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-4">
+                         <div class="item v_entertainment" >
+                            <div class="inner">
+                               &nbsp;
+                               
+                               <img src="./pictures/couple.png" alt="" style="height: 60px !important; width: 60px;">
+                
+                            </div>
+                            <h2>
+                               Senior Living
+                            </h2>
+                         </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-4">
+                         <div class="item v_finance" >
+                            <div class="inner">
+                               &nbsp;
+                               <i class="fa fa-line-chart" aria-hidden="true"></i>
+                
+                            </div>
+                            <h2>
+                               Finance
+                            </h2>
+                         </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-4">
+                         <div class="item v_government" >
+                            <div class="inner">
+                               &nbsp;
+                              <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                            </div>
+                            <h2>
+                               Healthcare
+                            </h2>
+                         </div>
+                      </div>
+                    
+                   </div>
+                </div>
+                </div>
+            </section>
+          <!-- /.container -->
+
+       
+
+          <section id="contact" class="vc_row mt-50 bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="lqd-column col-md-6">
+                  <h2 class="h3 mt-0 mb-1">Contact us</h2>
+                  <hr class="mb-40" />
+  
+                  <div class="row mb-20">
+                    <div class="lqd-column col-sm-6">
+                      <p class="font-size-16 text-primary">Address</p>
+                      <p class="font-size-15">
+                        290 Maryam Springs 260, <br />
+                        Courbevoie, Paris, France
+                      </p>
+                    </div>
+                    <!-- /.col-sm-6 -->
+  
+                    <div class="lqd-column col-sm-6">
+                      <p class="font-size-16 text-primary">Call Us</p>
+                      <p class="font-size-15">
+                        +47 213 5941 295 <br />
+                        hello@ave.com
+                      </p>
+                    </div>
+                    <!-- /.col-sm-6 -->
+                  </div>
+                  <!-- /.row -->
+  
+                  <div class="ld-gmap-container" style="height: 280px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1805.0896148598704!2d55.273019198053085!3d25.19717756178073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2s!4v1697549350819!5m2!1sen!2s" width="600" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- /.ld-gmap -->
+                  </div>
+                  <!-- /.ld-gmap-container -->
+                </div>
+                <!-- /.col-md-6 -->
+  
+                <div class="lqd-column col-md-5 col-md-offset-1 text-center">
+                  <div
+                    class="lqd-column-inner border-athens-gray pt-40 pb-35 px-5"
+                  >
+                    <h2 class="h3 mt-0 mb-1">Send a message</h2>
+                    <p class="font-size-15 mb-35">
+                      Feel free to reach us if you need any assistance.
+                    </p>
+  
+                    <div
+                      class="contact-form contact-form-inputs-filled contact-form-button-block"
+                    >
+                      <form
+                        action="assets/php/mailer.php"
+                        method="post"
+                        novalidate="novalidate"
+                      >
+                        <div class="row">
+                          <div class="col-md-12">
+                            <input
+                              class="bg-athens-gray px-4"
+                              type="text"
+                              name="name"
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="First Name"
+                              required
+                            />
+                          </div>
+                          <!-- /.col-md-12 -->
+                          <div class="col-md-12">
+                            <input
+                              class="bg-athens-gray px-4"
+                              type="email"
+                              name="email"
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="Your email address"
+                              required
+                            />
+                          </div>
+                          <!-- /.col-md-12 -->
+                          <div class="col-md-12">
+                            <textarea
+                              class="bg-athens-gray px-4"
+                              cols="10"
+                              rows="4"
+                              name="message"
+                              aria-required="true"
+                              aria-invalid="false"
+                              placeholder="Message"
+                              required
+                            ></textarea>
+                          </div>
+                          <!-- /.col-md-12 -->
+                          <div class="col-md-12">
+                            <input
+                              type="submit"
+                              value="SEND MESSAGE"
+                              class="font-size-14 ltr-sp-2"
+                            />
+                          </div>
+                          <!-- /.col-md-12 -->
+                        </div>
+                        <!-- /.row -->
+                      </form>
+                      <div class="contact-form-result hidden"></div>
+                      <!-- /.contact-form-result -->
+                    </div>
+                    <!-- /.contact-form -->
+                  </div>
+                  <!-- /.lqd-column-inner -->
+                </div>
+                <!-- /.lqd-column col-md-5 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container -->
+          </section>
+       
+      </main>
+      <!-- /#content.content -->
+
+        <footer class="main-footer pt-90 footer-bg">
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="lqd-column col-md-3 col-sm-6">
+                  <h3 class="widget-title font-size-20">Main Navigation</h3>
+                  <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <!-- /.col-md-3 col-sm-6 -->
+
+                <div class="lqd-column col-md-3 col-sm-6">
+                  <h3 class="widget-title font-size-20">web development</h3>
+                  <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                    <li><a href="#">Custom website design</a></li>
+                    <li><a href="#">E-commerce solutions</a></li>
+                    <li><a href="#">Email Hosting</a></li>
+                    <li><a href="#">Shopify Stores</a></li>
+                  </ul>
+                </div>
+                <!-- /.col-md-3 col-sm-6 -->
+
+                <div class="lqd-column col-md-3 col-sm-6">
+                  <h3 class="widget-title font-size-20">Solutions Provider</h3>
+                  <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#">Custom software development</a></li>
+                    <li><a href="#">Integration Services</a></li>
+                    <li><a href="#">Digital Transformation</a></li>
+                  </ul>
+                </div>
+                <!-- /.col-md-3 col-sm-6 -->
+
+                <div class="lqd-column col-md-3 col-sm-6">
+                  <h3 class="widget-title font-size-20">SEO Services</h3>
+                  <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                    <li><a href="#">Keyword Research</a></li>
+                    <li><a href="#">On-Page Optimization.</a></li>
+                    <li><a href="#">Content Strategy</a></li>
+                    <li><a href="#">Analytics and Reporting</a></li>
+                  </ul>
+                </div>
+                <!-- /.col-md-3 col-sm-6 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container -->
+          </section>
+
+          <section class="bt-fade-white-015 pt-100 pb-60">
+            <div class="container">
+              <div class="row d-flex flex-wrap align-items-center">
+                <div class="lqd-column col-md-4 col-xs-6">
+                  <figure class="mb-60 mb-md-0">
+                    <img src="./assets/img/logo/logo-1.svg" alt="Logo" />
+                  </figure>
+                </div>
+                <!-- /.col-md-4 -->
+
+                <div
+                  class="lqd-column col-md-4 col-xs-6 text-right text-md-center"
+                >
+                  <p class="font-size-14 mb-60 mb-md-0">
+                    © 2023
+                    <span class="font-weight-bold text-secondary">Alphatoris</span>. All
+                    Rights Reserved.
+                  </p>
+                </div>
+                <!-- /.col-md-4 -->
+
+                <div
+                  class="lqd-column col-md-4 col-xs-12 text-center text-md-right"
+                >
+                  <ul class="social-icon branded-text social-icon-md">
+                    <li>
+                      <a href="#" target="_blank"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><i class="fa fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><i class="fa fa-behance"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank"
+                        ><i class="fa fa-dribbble"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.col-md-4 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container -->
+          </section>
+        </footer>
+      <!-- /.main-footer -->
+    </div>
+    <!-- /#wrap -->
+
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/js/theme-vendors.js"></script>
+    <script src="./assets/js/theme.min.js"></script>
+  </body>
+</html>

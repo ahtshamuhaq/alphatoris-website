@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#3ed2a7" />
+    <style>
+        .dropdown-container {
+          position: relative;
+          display: inline-block;
+          padding: 0; /* Reset padding */
+          margin: 0; /* Reset margin */
+        }
+  
+        .dropdown-container > a {
+          display: block;
+          padding: 0; /* Reset padding */
+          margin: 0; /* Reset margin */
+        }
+  
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          top: 100%; /* This will position the dropdown right below the "Services" */
+          left: 0; /* Align to the left side */
+          background-color: #f9f9f9;
+          min-width: 290px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          margin: 0; /* Reset margin */
+          padding: 0; /* Reset padding */
+        }
+  
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          background-color: white; /* White background for dropdown items */
+          margin: 0; /* Reset margin */
+        }
+  
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+  
+        .dropdown-container:hover .dropdown-content {
+          display: block;
+        }
+        
+  
+      </style>
+
+    <link rel="shortcut icon" href="./favicon.png" />
+
+    <title>Ave HTML Template</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/qxb8htk.css" />
+
+    <link
+      rel="stylesheet"
+      href="assets/vendors/liquid-icon/liquid-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
+    <link rel="stylesheet" href="assets/css/theme.min.css" />
+    <link rel="stylesheet" href="assets/css/themes/original.css" />
+
+    <!-- Head Libs -->
+    <script async src="assets/vendors/modernizr.min.js"></script>
+  </head>
+  <body
+    data-mobile-nav-trigger-alignment="right"
+    data-mobile-nav-align="left"
+    data-mobile-nav-style="modern"
+    data-mobile-nav-shceme="gray"
+    data-mobile-header-scheme="gray"
+    data-mobile-nav-breakpoint="1199"
+  >
+    <div id="wrap">
+      <div
+        class="titlebar titlebar-md scheme-light text-center"
+        data-parallax="true"
+        data-parallax-options='{ "parallaxBG": true }'
+        style="background-image: url(./pictures/webb1.jpg)"
+      >
+      <header class="main-header main-header-overlay">
+        <div class="mainbar-wrap">
+          <div class="megamenu-hover-bg"></div>
+          <!-- /.megamenu-hover-bg -->
+          <div class="container-fluid mainbar-container">
+            <div class="mainbar">
+              <div class="row mainbar-row align-items-lg-stretch px-4">
+                <div class="col pr-5">
+                  <div class="navbar-header">
+                    <a
+                      class="navbar-brand"
+                      href="index-creative.html"
+                      rel="home"
+                    >
+                      <span class="navbar-brand-inner">
+                        <img
+                          class="mobile-logo-default"
+                          src="./assets/img/logo/logo-1.svg"
+                          alt="Ave HTML Template"
+                        />
+                        <img
+                          class="logo-default"
+                          src="./assets/img/logo/logo-light.svg"
+                          alt="Ave HTML Template"
+                        />
+                      </span>
+                    </a>
+                    <button
+                      type="button"
+                      class="navbar-toggle collapsed nav-trigger style-mobile"
+                      data-toggle="collapse"
+                      data-target="#main-header-collapse"
+                      aria-expanded="false"
+                      data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'
+                    >
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                      </span>
+                    </button>
+                  </div>
+                  <!-- /.navbar-header -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col">
+                  <div
+                    class="collapse navbar-collapse"
+                    id="main-header-collapse"
+                  >
+                    <ul
+                      id="primary-nav"
+                      class="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center"
+                      data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'
+                      data-localscroll="true"
+                    >
+                      <li class="is-active">
+                        <a href="./index.html">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">Home</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./index.html">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">About</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li class="dropdown-container">
+                        <a href="#services">
+                          <span class=""></span>
+                          <span class="">
+                            <span class=""></span>
+                            <span class="">Services</span>
+                          </span>
+                        </a>
+                        <div class="dropdown-content">
+                          <a href="./solutions.html">Solution Providers</a>
+                          <a href="./webdev.html">Web development and email hosting </a>
+                          <a href="./managed.html">Managed Services 
+                          <a href="./ios.html">ios/Andriod development</a>
+                          <a href="./seo.html">SEO Services</a>
+                          <a href="./contentwriting.html">Content Writing</a>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#blog">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">Career</span>
+                          </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./index.html#contact">
+                          <span class="link-icon"></span>
+                          <span class="link-txt">
+                            <span class="link-ext"></span>
+                            <span class="txt">Contact</span>
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!-- /#primary-nav  -->
+                  </div>
+                  <!-- /#main-header-collapse -->
+                </div>
+                <!-- /.col -->
+
+                <div class="col text-right">
+                  <div class="header-module">
+                    <ul
+                      class="social-icon social-icon-sm scheme-white font-size-16"
+                    >
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-behance"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" target="_blank"
+                          ><i class="fa fa-dribbble"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.header-module -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.mainbar-row -->
+            </div>
+            <!-- /.mainbar -->
+          </div>
+          <!-- /.mainbar-container -->
+        </div>
+        <!-- /.mainbar-wrap -->
+      </header>
+        <!-- /.main-header -->
+
+        <div class="titlebar-inner">
+          <div class="container titlebar-container">
+            <div class="row titlebar-container">
+              <div class="titlebar-col col-md-12">
+                <h1
+                  data-fittext="true"
+                  data-fittext-options='{ "maxFontSize": 55, "minFontSize": 32 }'
+                >
+                  We enjoy building cool stuff.
+                </h1>
+                <a
+                  class="titlebar-scroll-link"
+                  href="#content"
+                  data-localscroll="true"
+                  ><i class="fa fa-angle-down"></i
+                ></a>
+              </div>
+              <!-- /.titlebar-col -->
+            </div>
+            <!-- /.titlebar-row -->
+          </div>
+          <!-- /.titlebar-container -->
+        </div>
+        <!-- /.titlebar-inner -->
+      </div>
+      <!-- /.titlebar -->
+
+      <main id="content" class="content">
+        
+        
+        <section class="vc_row pt-50 pb-50 mt-50">
+            <header class="fancy-titlec">
+              <h2 class="mt-0 text-center mb-3">Web Development and Email Hosting</h2>
+              <h6 class="font-size-15 text-center mb-5 font-weight-normal opacity-05">
+                As a leading digital agency in Paris, we look to engage with
+                our clients beyond the conventional design and development
+                agency relationship.
+              </h6>
+            </header>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="lqd-column col-md-4">
+                        
+                        <div class="iconbox text-left iconbox-semiround iconbox-shadow iconbox-xl iconbox-filled iconbox-filled iconbox-filled-hover iconbox-scale-bg">
+                            <div class="iconbox-icon-wrap">
+                                <span class="iconbox-icon-container">
+                                                              <img src="./pictures/custom.png" alt="" style="height: 50px !important; width: 50px;">
+
+                                </span>
+                            </div><!-- /.iconbox- icon-wrap -->
+                            <div class="contents">
+                                <h3>Custom website design</h3>
+                               
+                            </div>
+                           <!-- /.contents -->
+                        </div><!-- /.iconbox -->
+
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="lqd-column col-md-4">
+
+                        <div class="iconbox text-left iconbox-semiround iconbox-shadow iconbox-xl iconbox-filled iconbox-filled iconbox-filled-hover iconbox-scale-bg">
+                            <div class="iconbox-icon-wrap">
+                                <span class="iconbox-icon-container">
+                                                              <img src="./pictures/ecommerce.png" alt="" style="height: 50px !important; width: 50px;">
+
+                                </span>
+                            </div><!-- /.iconbox- icon-wrap -->
+                            <div class="contents">
+                                <h3>E-commerce solutions</h3>
+                               
+                            </div>
+                           <!-- /.contents -->
+                        </div><!-- /.iconbox -->
+
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="lqd-column col-md-4">
+
+                        <div class="iconbox text-left iconbox-semiround iconbox-shadow iconbox-xl iconbox-filled iconbox-filled iconbox-filled-hover iconbox-scale-bg">
+                            <div class="iconbox-icon-wrap">
+                                <span class="iconbox-icon-container">
+                                                              <img src="./pictures/email.png" alt="" style="height: 50px !important; width: 50px;">
+
+                                </span>
+                            </div><!-- /.iconbox- icon-wrap -->
+                            <div class="contents">
+                                <h3>Email Hosting</h3>
+                               
+                            </div>
+                           <!-- /.contents -->
+                        </div><!-- /.iconbox -->
+
+                    </div><!-- /.col-md-4 -->
+
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+
+        <section class="vc_row bg-athens-gray pt-90 pb-80 mb-40">
+            <div class="container">
+              <div class="row">
+                <div class="lqd-column col-lg-6">
+                  <h2
+                    class="font-size-38 lh-13 mt-0 mb-30"
+                    data-split-text="true"
+                    data-split-options='{"type":"lines"}'
+                    data-text-rotator="true"
+                  >
+                    Forget about design limits! Build and customize your business
+                    <!-- /.txt-rotate-keywords -->
+                  </h2>
+  
+                  <div
+                    class="accordion accordion-md accordion-title-underlined accordion-expander-left accordion-active-color-primary"
+                    id="vc_accordion_5c77a7f9d2896"
+                    role="tablist"
+                  >
+                    <div class="accordion-item panel active">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading_accordion-1"
+                      >
+                        <h4 class="accordion-title font-size-17 lh-15">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#vc_accordion_5c77a7f9d2896"
+                            href="#accordion-1"
+                            aria-expanded="true"
+                            aria-controls="accordion-1"
+                          >
+                          Custom Website Design
+                            <span class="accordion-expander">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <!-- /.accordion-heading -->
+                      <div
+                        id="accordion-1"
+                        class="accordion-collapse collapse in"
+                        role="tabpanel"
+                        aria-labelledby="heading_accordion-1"
+                      >
+                        <div class="accordion-content">
+                          <p>
+                            Our custom website design service focuses on developing a distinctive online identity that has an impact over the years. To connect with your ideal customers and support you in accomplishing your business goals, we combine eye-catching visuals with compelling content.
+                          </p>
+                        </div>
+                        <!-- /.accordion-content -->
+                      </div>
+                      <!-- /.accordion-collapse -->
+                    </div>
+                    <!-- /.accordion-item -->
+  
+                    <div class="accordion-item panel">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading_accordion-2"
+                      >
+                        <h4 class="accordion-title font-size-17 lh-15">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#vc_accordion_5c77a7f9d2896"
+                            href="#accordion-2"
+                            aria-expanded="false"
+                            aria-controls="accordion-2"
+                          >
+                          E-commerce Solutions
+
+                            <span class="accordion-expander">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <!-- /.accordion-heading -->
+                      <div
+                        id="accordion-2"
+                        class="accordion-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="heading_accordion-2"
+                      >
+                        <div class="accordion-content">
+                          <p>
+                            We are experts at creating e-commerce solutions that enhance the online shopping experience. We build platforms that increase sales and customer satisfaction, via user-friendly user interfaces to secure payment gateways.
+                          </p>
+                        </div>
+                        <!-- /.accordion-content -->
+                      </div>
+                      <!-- /.accordion-collapse -->
+                    </div>
+                    <!-- /.accordion-item -->
+  
+                    <div class="accordion-item panel">
+                      <div
+                        class="accordion-heading"
+                        role="tab"
+                        id="heading_accordion-3"
+                      >
+                        <h4 class="accordion-title font-size-17 lh-15">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#vc_accordion_5c77a7f9d2896"
+                            href="#accordion-3"
+                            aria-expanded="false"
+                            aria-controls="accordion-3"
+                          >
+                          Email Hosting 
+
+                            <span class="accordion-expander">
+                              <i class="fa fa-angle-down"></i>
+                              <i class="fa fa-angle-up"></i>
+                            </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <!-- /.accordion-heading -->
+                      <div
+                        id="accordion-3"
+                        class="accordion-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="heading_accordion-3"
+                      >
+                        <div class="accordion-content">
+                          <p>
+                            Our email hosting services are built to ensure the efficiency and security of your business communications. With our reliable hosting, you can confidently manage your emails while focusing on other critical aspects of your business.
+Solutions Provider
+
+                          </p>
+                        </div>
+                        <!-- /.accordion-content -->
+                      </div>
+                      <!-- /.accordion-collapse -->
+                    </div>
+                    <!-- /.accordion-item -->
+                  </div>
+                  <!-- /.accordion -->
+                </div>
+                <!-- /.lqd-column col-lg-6 -->
+  
+                <div class="lqd-column col-lg-5 col-lg-offset-1">
+                  <div class="liquid-img-group-container">
+                    <div class="liquid-img-group-inner">
+                      <div
+                        class="liquid-img-group-single"
+                        data-shadow-style="3"
+                        data-roundness="6"
+                        data-inview="true"
+                        data-animate-shadow="true"
+                      >
+                        <div class="liquid-img-group-img-container">
+                          <div
+                            class="liquid-img-container-inner"
+                            data-parallax="true"
+                            data-parallax-from='{"translateX":60}'
+                            data-parallax-to='{"translateX":0}'
+                            data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
+                          >
+                            <figure>
+                              <img
+                                src="./pictures/webexp3.png" style="height: 450px;"
+                                alt="Forget about design limits"
+                              />
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.lqd-column col-lg-5 col-lg-offset-1 -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container -->
+          </section>
+
+     
+      </main>
+      <!-- /#content.content -->
+
+      <footer class="main-footer pt-90 footer-bg">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="lqd-column col-md-3 col-sm-6">
+                <h3 class="widget-title font-size-20">Main Navigation</h3>
+                <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+              <!-- /.col-md-3 col-sm-6 -->
+
+              <div class="lqd-column col-md-3 col-sm-6">
+                <h3 class="widget-title font-size-20">web development</h3>
+                <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                  <li><a href="#">Custom website design</a></li>
+                  <li><a href="#">E-commerce solutions</a></li>
+                  <li><a href="#">Email Hosting</a></li>
+                  <li><a href="#">Shopify Stores</a></li>
+                </ul>
+              </div>
+              <!-- /.col-md-3 col-sm-6 -->
+
+              <div class="lqd-column col-md-3 col-sm-6">
+                <h3 class="widget-title font-size-20">Solutions Provider</h3>
+                <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                  <li><a href="#">Consulting</a></li>
+                  <li><a href="#">Custom software development</a></li>
+                  <li><a href="#">Integration Services</a></li>
+                  <li><a href="#">Digital Transformation</a></li>
+                </ul>
+              </div>
+              <!-- /.col-md-3 col-sm-6 -->
+
+              <div class="lqd-column col-md-3 col-sm-6">
+                <h3 class="widget-title font-size-20">SEO Services</h3>
+                <ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
+                  <li><a href="#">Keyword Research</a></li>
+                  <li><a href="#">On-Page Optimization.</a></li>
+                  <li><a href="#">Content Strategy</a></li>
+                  <li><a href="#">Analytics and Reporting</a></li>
+                </ul>
+              </div>
+              <!-- /.col-md-3 col-sm-6 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </section>
+
+        <section class="bt-fade-white-015 pt-100 pb-60">
+          <div class="container">
+            <div class="row d-flex flex-wrap align-items-center">
+              <div class="lqd-column col-md-4 col-xs-6">
+                <figure class="mb-60 mb-md-0">
+                  <img src="./assets/img/logo/logo-1.svg" alt="Logo" />
+                </figure>
+              </div>
+              <!-- /.col-md-4 -->
+
+              <div
+                class="lqd-column col-md-4 col-xs-6 text-right text-md-center"
+              >
+                <p class="font-size-14 mb-60 mb-md-0">
+                  © 2023
+                  <span class="font-weight-bold text-secondary">Alphatoris</span>. All
+                  Rights Reserved.
+                </p>
+              </div>
+              <!-- /.col-md-4 -->
+
+              <div
+                class="lqd-column col-md-4 col-xs-12 text-center text-md-right"
+              >
+                <ul class="social-icon branded-text social-icon-md">
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fa fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fa fa-behance"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"
+                      ><i class="fa fa-dribbble"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </section>
+      </footer>
+      <!-- /.main-footer -->
+    </div>
+    <!-- /#wrap -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4APPDpT3CRGCgk3Cmv9xBvEK5Lq3HGo"></script>
+
+    <script src="./assets/vendors/jquery.min.js"></script>
+    <script src="./assets/js/theme-vendors.js"></script>
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/liquidAjaxContactForm.min.js"></script>
+    <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
+  </body>
+</html>
