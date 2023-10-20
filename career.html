@@ -58,7 +58,68 @@ color: black !important;
           display: block;
         }
         
-  
+        .career-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #f4f4f4;  /* light grey background for contrast */
+}
+
+.career-content {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 60%;
+    box-sizing: border-box;
+}
+
+.career-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.career-content strong {
+    color: #004e93;  /* a touch of Alphatoris blue for emphasis */
+}
+
+.contact-button {
+    padding: 10px 25px;
+    background-color: #004e93;  /* Alphatoris blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #003366;  /* a darker shade of blue for hover effect */
+}
+
+.career-image {
+    flex: 1;
+    padding: 0 20px;
+    max-width: 40%;
+    box-sizing: border-box;
+}
+
+.career-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .career-section {
+        flex-direction: column;
+    }
+
+    .career-content, .career-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
       </style>
 
     <link rel="shortcut icon" href="./favicon.png" />
@@ -95,7 +156,7 @@ color: black !important;
         class="titlebar titlebar-md scheme-light text-center"
         data-parallax="true"
         data-parallax-options='{ "parallaxBG": true }'
-        style="background-image: url(./pictures/managed1.jpg)"
+        style="background-image: url(./pictures/career.jpeg)"
       >
       <header class="main-header main-header-overlay">
         <div class="mainbar-wrap">
@@ -265,7 +326,7 @@ color: black !important;
                   data-fittext="true"
                   data-fittext-options='{ "maxFontSize": 55, "minFontSize": 32 }'
                 >
-                Managed Services
+                Career Oppurtunities
                 </h1>
                 <a
                   class="titlebar-scroll-link"
@@ -287,73 +348,18 @@ color: black !important;
       <main id="content" class="content">
         
         
-        <section class="vc_row pt-50 pb-50 mt-50">
-            <header class="fancy-titlec">
-             
-              <h6 class="font-size-17 text-center mb-5 font-weight-normal "style="width: 50%; margin: 0 auto;">
-                Our managed service aims to provide our customers with a seamless and mindful support system, not just questions answered. We take pride in providing prompt issue resolution, effective inquiry resolution, and a range of support channels that are all intended to improve the customer experience. We are available to support our customers professionally and with care via phone or email.  
-              </h6>
-            </header>
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="lqd-column col-md-4">
-                        
-                        <div class="iconbox text-left fixed-iconbox  iconbox-semiround iconbox-shadow iconbox-xl iconbox-filled iconbox-filled iconbox-filled-hover iconbox-scale-bg">
-                            <div class="iconbox-icon-wrap">
-                                <span class="iconbox-icon-container">
-                                                              <img src="./pictures/inquiry.png" alt="" style="height: 50px !important; width: 50px;">
-
-                                </span>
-                            </div><!-- /.iconbox- icon-wrap -->
-                            <div class="contents">
-                                <h3>Inquiry Resolution</h3>
-                               <p>Our inquiry resolution services are committed to promptly and accurately replying to customer inquiries.</p>
-                            </div>
-                           <!-- /.contents -->
-                        </div><!-- /.iconbox -->
-
-                    </div><!-- /.col-md-4 -->
-
-                    <div class="lqd-column col-md-4">
-
-                        <div class="iconbox text-left fixed-iconbox  iconbox-semiround iconbox-shadow iconbox-xl iconbox-filled iconbox-filled iconbox-filled-hover iconbox-scale-bg">
-                            <div class="iconbox-icon-wrap">
-                                <span class="iconbox-icon-container">
-                                                              <img src="./pictures/issue.png" alt="" style="height: 50px !important; width: 50px;">
-
-                                </span>
-                            </div><!-- /.iconbox- icon-wrap -->
-                            <div class="contents">
-                                <h3> Issue Resolution</h3>
-                               <p>To ensure that our customers receive the attention and support they need, we concentrate in quickly resolving their problems or concerns.</p>
-                            </div>
-                           <!-- /.contents -->
-                        </div><!-- /.iconbox -->
-
-                    </div><!-- /.col-md-4 -->
-
-                    <div class="lqd-column col-md-4">
-
-                        <div class="iconbox text-left fixed-iconbox  iconbox-semiround iconbox-shadow iconbox-xl iconbox-filled iconbox-filled iconbox-filled-hover iconbox-scale-bg">
-                            <div class="iconbox-icon-wrap">
-                                <span class="iconbox-icon-container">
-                                                              <img src="./pictures/support.png" alt="" style="height: 50px !important; width: 50px;">
-
-                                </span>
-                            </div><!-- /.iconbox- icon-wrap -->
-                            <div class="contents">
-                                <h3>Support Services</h3>
-                               <p>Our support services offer a range of channels for customers to reach out to us, creating a seamless and attentive support system for our clients</p>
-                            </div>
-                           <!-- /.contents -->
-                        </div><!-- /.iconbox -->
-
-                    </div><!-- /.col-md-4 -->
-
-                </div><!-- /.row -->
-            </div><!-- /.container -->
+        <section class="career-section">
+            <div class="career-content">
+                <p>
+                    Exploring opportunities at <strong>Alphatoris</strong> is always a smart move, and while we don't have any <strong>current openings </strong>, we're continually on the lookout for outstanding individuals to join our team. We believe that great talent is worth the wait, so please stay connected with us. Keep an eye on our careers page for future roles and exciting prospects.
+                </p>
+                <button class="contact-button">Contact Us</button>
+            </div>
+            <div class="career-image">
+                    <img src="./pictures/join.jpg" alt="Career at Alphatoris">
+            </div>
         </section>
+        
 
         
 

@@ -20,6 +20,21 @@ color: black !important;
     background-position: center;  
     background-repeat: no-repeat;  
 }
+.iconbox-bl {
+    background-color: #004e93 !important;
+    border-radius: 50% !important;  /* makes the box a circle */
+    height: 100px !important;
+    width: 100px !important;
+    display: flex !important;
+    align-items: center; /* vertically center the image */
+    justify-content: center; /* horizontally center the image */
+}
+
+.iconbox-bl img {
+    height: 50px !important; 
+    width: 50px !important;
+}
+
 .responsive-img {
     max-width: 100%;
     height: auto;
@@ -138,6 +153,50 @@ p {
     text-transform: uppercase;
     cursor: pointer;
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    max-width: 20%;
+    margin: 1% 2%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.icon-box {
+    width: 100px;
+    height: 100px;
+    background-color: #004e93;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box img {
+  padding: 5px;
+    width: 70px;
+    height: 70px;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .column {
+        max-width: 50%;
+    }
+}
+
 .fa-heartbeat,.fa-train, 
 .fa-university, 
 .fa-television, 
@@ -297,7 +356,7 @@ p {
                       </li>
 
                       <li>
-                        <a href="#blog">
+                        <a href="./career.html">
                           <span class="link-icon"></span>
                           <span class="link-txt">
                             <span class="link-ext"></span>
@@ -386,17 +445,18 @@ p {
                   <h6
                     class="text-uppercase font-weight-normal ltr-sp-2 text-white mb-5"
                   >
-                    WE LOVE CREATING
+
                   </h6>
-                  <h2 class="text-white lh-15 mb-4">
-                    <span class="font-size-3-3x lh-1">digital ideas</span>
+                  <h2 class="text-white lh-15 mb-4 " style="font-size: 68px !important; ">
+                    Shaping the technology of tomorrow
+
                   </h2>
 
                   <div class="row">
                     <div class="lqd-column col-md-8 col-md-offset-2">
                       <p class="text-white font-size-24 mb-1">
                        Unlock your digital potential with Alphatoris, your partner in innovation and excellence.
-                       Explore the future of business solutins today
+                       Explore the future of business solutions today
                       </p>
                     </div>
                     <!-- /.col-md-8 col-md-offset-2 -->
@@ -442,7 +502,8 @@ p {
                   <div class="lqd-column col-lg-6 text-center text-lg-left">
                       <header class="fancy-title mb-20">
                           <h2 class="mt-4 main-title" data-split-text="true" data-split-options='{"type":"lines"}'>Who We Are</h2>
-                          <h3 class="sub-title">Crafting Excellence in Dubai</h3> <!-- Add your sub-heading here -->
+                          <h3 class="sub-title" style="color: #0C93FE
+                          ;" > Crafting Excellence in Dubai</h3> <!-- Add your sub-heading here -->
                       </header>
       
                       <p class="font-size-16 text-black improved-text mb-20">
@@ -455,12 +516,13 @@ p {
                           We are business owners ourselves, so we understand the budgetary and time constraints that companies face. We’ll help you define your business goals and objectives in clear, concise terms and then work with you to deliver an integrated solution that drives bottom-line results. At Alphatoris, we pride ourselves on the level of personal contact we provide our clients.
                       </p>
       
-                      <a href="#contact" style="background-color: #a9a9a9 ; color: white; padding: 10px;" >Contact Us</a> <!-- Button Link -->
+                      <a href="#contact" style="background-color: #0C93FE
+                      ; color: white; padding: 10px;" >Contact Us</a> <!-- Button Link -->
                   </div>
       
                   <!-- Image Side -->
                   <div class="lqd-column col-lg-6 text-center">
-                      <img src="./pictures/aboutus1.png" alt="Description of Image" style="max-width: 100%; " class="responsive-img">
+                      <img src="./pictures/aboutus1.jpg" alt="Description of Image" style="max-width: 100%; margin-top: 50px ; margin-left: 12px; " class="responsive-img">
                   </div>
       
               </div>
@@ -492,7 +554,8 @@ p {
                         </h3>
                         <p   style="
                         color: #000000;
-                        font-size: 15px;
+                         font-size: 15px;
+                        font-weight: 500;
                         
                       ">
                           
@@ -533,7 +596,8 @@ p {
                         </h3>
                         <p style="
                         color: #000000;
-                        font-size: 15px;
+                         font-size: 15px;
+                        font-weight: 500;
                         
                       ">
                           Our managed service aims to provide our customers with a seamless and mindful support system, not....</p>
@@ -567,7 +631,8 @@ p {
                         <h3 class="font-weight-semibold">Content Writing</h3>
                         <p  style="
                         color: #000000;
-                        font-size: 15px;
+                         font-size: 15px;
+                        font-weight: 500;
                         
                       ">
                           
@@ -604,7 +669,8 @@ p {
                         <p 
                         style="
                           color: #000000;
-                          font-size: 15px;
+                           font-size: 15px;
+                        font-weight: 500;
                           
                         ">
                           
@@ -640,7 +706,8 @@ p {
                         <p 
                         style="
                           color: #000000;
-                          font-size: 15px;
+                           font-size: 15px;
+                        font-weight: 500;
                           
                         ">
                           
@@ -675,7 +742,8 @@ p {
                         <h3 class="font-weight-semibold web">Website development </h3>
                         <p  style="
                         color: #000000;
-                        font-size: 15px;
+                         font-size: 15px;
+                        font-weight: 500;
                         
                       ">
                           
@@ -707,111 +775,48 @@ p {
                    Industries 
                 </h2>
                 <p class="paddingBottom45 ">
-                  We have the privilege to work with a wide range of industries, offering specialized solutions to handle their particular needs and difficulties.
-                </p>
-                <section class="vc_row ">
+                  We take pride in our versatility and knowledge in a variety of industries. Our objective is to fully understand the unique dynamics of each industry we work in and to provide specialized solutions that promote success.                </p>
+                <section>
                   <div class="container">
-                    <div class="row d-flex justify-content-center">
-          
-                      <div class="lqd-column col-md-2 ">
-          
-                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-blue px-2 w-100" data-plugin-options='{"color": "#3d59e8"}'>
-                          
-                          <div class="iconbox-icon-wrap">
-                            <span class="iconbox-icon-container">
-                             
-                          <img src="./pictures/icon1.png" alt="" style="height: 70px !important; width: 70px;">
-                            
-                            </span>
-                          </div><!-- /.iconbox-icon-wrap -->
-                          <div class="contents">
-                            <p class="font-size-14">
-                              <strong>Education</strong>
-                            </p>
-                          </div><!-- /.contents -->
-          
-                        </div><!-- /.iconbox -->
-          
-                      </div><!-- /.col-md-2 col-md-offset-3 -->
-          
-                      <div class="lqd-column col-md-2">
-          
-                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-green px-2 w-100" data-plugin-options='{"color": "#28d5a7"}'>
-                          
-                          <div class="iconbox-icon-wrap">
-                            <span class="iconbox-icon-container">
-                          <img src="./pictures/icon2.png" alt="" style="height: 70px !important; width: 70px;">
-
-                            </span>
-                          </div><!-- /.iconbox-icon-wrap -->
-                          <div class="contents">
-                            <p class="font-size-14">
-                              <strong>HealthCare</strong>
-                            </p>
-                          </div><!-- /.contents -->
-          
-                        </div><!-- /.iconbox -->
-          
-                      </div><!-- /.col-md-2 -->
-          
-                      <div class="lqd-column col-md-2">
-          
-                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex iconbox-pink px-2 w-100" data-plugin-options='{"color": "#fe688b"}'>
-                          
-                          <div class="iconbox-icon-wrap">
-                            <span class="iconbox-icon-container">
-                          <img src="./pictures/icon3.png" alt="" style="height: 70px !important; width: 70px;">
-                            </span>
-                          </div><!-- /.iconbox-icon-wrap -->
-                          <div class="contents">
-                            <p class="font-size-14">
-                              <strong>Senior Living</strong>
-                            </p>
-                          </div><!-- /.contents -->
-          
-                        </div><!-- /.iconbox -->
-          
-                      </div><!-- /.col-md-2 -->
-                      <div class="lqd-column col-md-2">
-          
-                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex  px-2 w-100" style="background-color: #DCE9F6" data-plugin-options='{"color": "#fe688b"}'>
-                          
-                          <div class="iconbox-icon-wrap">
-                            <span class="iconbox-icon-container">
-                          <img src="./pictures/icon4.png" alt="" style="height: 70px !important; width: 70px;">
-                            </span>
-                          </div><!-- /.iconbox-icon-wrap -->
-                          <div class="contents">
-                            <p class="font-size-14">
-                              <strong>Government</strong>
-                            </p>
-                          </div><!-- /.contents -->
-          
-                        </div><!-- /.iconbox -->
-          
-                      </div><!-- /.col-md-2 -->
-                      <div class="lqd-column col-md-2">
-          
-                        <div class="iconbox iconbox-round iconbox-shadow iconbox-heading-xs iconbox-filled d-inline-flex  px-2 w-100" style="background-color: #fcece1;" data-plugin-options='{"color": "#fe688b"}'>
-                          
-                          <div class="iconbox-icon-wrap">
-                            <span class="iconbox-icon-container">
-                          <img src="./pictures/icon5.png" alt="" style="height: 70px !important; width: 70px;">
-                            </span>
-                          </div><!-- /.iconbox-icon-wrap -->
-                          <div class="contents">
-                            <p class="font-size-14">
-                              <strong>Finance</strong>
-                            </p>
-                          </div><!-- /.contents -->
-          
-                        </div><!-- /.iconbox -->
-          
-                      </div><!-- /.col-md-2 -->
-          
-                    </div><!-- /.row -->
-                  </div><!-- /.container -->
-                </section>
+                      <div class="row">
+                          <div class="column">
+                              <div class="icon-box">
+                                  <img src="./pictures/icon1.png" alt="Education Icon">
+                              </div>
+                              <strong style="color: #004E93;">Education</strong>
+                          </div>
+              
+                          <div class="column">
+                              <div class="icon-box">
+                                  <img src="./pictures/icon2.png" alt="HealthCare Icon">
+                              </div>
+                              <strong style="color: #004E93;">HealthCare</strong>
+                          </div>
+              
+                          <div class="column">
+                              <div class="icon-box">
+                                  <img src="./pictures/icon3.png" alt="Senior Living Icon">
+                              </div>
+                              <strong style="color: #004E93;">Senior Living</strong>
+                          </div>
+              
+                          <div class="column">
+                              <div class="icon-box">
+                                  <img src="./pictures/icon4.png" alt="Government Icon">
+                              </div>
+                              <strong style="color: #004E93;">Government</strong>
+                          </div>
+              
+                          <div class="column">
+                              <div class="icon-box">
+                                  <img src="./pictures/icon5.png" alt="Finance Icon">
+                              </div>
+                              <strong style="color: #004E93;">Finance</strong>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              
                 </div>
             </section>
           <!-- /.container -->
